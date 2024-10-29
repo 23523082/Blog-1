@@ -13,14 +13,6 @@
         <div class="container">
             <h1>My Blog</h1>
         </div>
-        <nav>
-                <ul>
-                    <li><a href="MyfirstWebPage.HTML">My first Html</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="NewArticle.php">Create Article</a></li>
-                    <li><a href="index.php">Home</a></li>
-                </ul>
-            </nav>
     </header>
 
     <div class="container">
