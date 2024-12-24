@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    flex: 1; 
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 20px 0; 
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.blog-post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    color: #35424a;
+}
+
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0; 
+    clear: both; 
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.blog-post div {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #35424a;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+button {
+    padding: 10px;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #e8491d;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header #branding {
+        float: none;
+        text-align: center;
+    }
+
+    header li {
+        display: inline-block; 
+        padding: 10px 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .blog-post {
+        padding: 15px; 
+    }
+
+    .blog-post h2 {
+        font-size: 24px; 
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px; 
+    }
+
+    header {
+        padding: 15px; 
+    }
+
+    header h1 {
+        font-size: 24px; 
+    }
+
+    header li {
+        display: block; 
+        padding: 5px 0;
+        text-align: center; 
+    }
+
+    .blog-post h2 {
+        font-size: 20px; 
+    }
+
+    footer {
+        padding: 10px; 
+    }
+
+    button {
+        padding: 12px;
+    }
+}

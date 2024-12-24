@@ -1,4 +1,9 @@
-<?php require 'articlescript.php'; ?>
+<?php 
+require 'dbconnections.php'; 
+require 'articlescript.php'; ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,9 +30,6 @@
             <img src="<?php echo htmlspecialchars($image); ?>" />
         <?php endif;?>
             <p><?php echo htmlspecialchars($paragraph1); ?></p>
-            <p><?php echo htmlspecialchars($paragraph2); ?></p>
-            <p><?php echo htmlspecialchars($paragraph3); ?></p>
-            <p><?php echo htmlspecialchars($paragraph4); ?></p>
         <?php if (!empty($linkyt)) : ?>
             <div class="video-responsive">
             <iframe 
